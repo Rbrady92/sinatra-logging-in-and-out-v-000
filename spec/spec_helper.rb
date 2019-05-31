@@ -9,7 +9,7 @@ require 'capybara/dsl'
 #   raise 'Migrations are pending. Run `rake db:migrate SINATRA_ENV=test` to resolve the issue.'
 # end
 
-#causing errors when present here and in config.ru (getting undefined method/NoMethodError for migration_context and needs_migration?)
+#causing errors (no tests run either) when present here and in config.ru (undefined method/NoMethodError for migration_context and needs_migration?)
 
 ActiveRecord::Base.logger = nil
 
